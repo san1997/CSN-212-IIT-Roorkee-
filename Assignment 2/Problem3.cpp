@@ -1,4 +1,6 @@
 //circular LIS
+//problem link : https://www.codechef.com/problems/D2/
+//http://ideone.com/mwiHi8
 #include <bits/stdc++.h>
 using namespace std;
 int n,a[30002];
