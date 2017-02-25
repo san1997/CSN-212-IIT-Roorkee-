@@ -1,4 +1,5 @@
 //Zigzag
+//http://ideone.com/SLPNgE
 #include <iostream>
 using namespace std;
 int n,a[100005], up[100005],down[100005];
