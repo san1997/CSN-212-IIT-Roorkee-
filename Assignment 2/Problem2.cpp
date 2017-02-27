@@ -14,12 +14,17 @@ int main() {
 	getline(cin,s,'|');
 //	cout <<s;
 	int ct = 0;
-	for(int i=0;i<s.size();i++)
+	for(int i=0;i<s.size();)
 	{
 //	cout <<s[i] << " ";
 		if((int)s[i] > 47 && (int)s[i] < 58)
 		{
-			num = (int)s[i]-48;
+			num = 0;
+			while((int)s[i] > 47 && (int)s[i] < 58){
+				num *= 10;
+				num += (int)s[i]-48;
+				i++;
+			}
 	//		cout <<"hi";
 			ct++;
 			if(ct == 1)
@@ -33,11 +38,9 @@ int main() {
 				b[xcr][ycr] = 1;
 			}
 		}
+		else i++;
 	}
-//	b[0][0] = 1;
-//	b[0][1] = 1;
-//	b[6][6] = 1;
-//	b[5][6] = 1;
+
 	ans[0][0] = 1;
 	for(int i=0;i<=x;i++)
 	{
