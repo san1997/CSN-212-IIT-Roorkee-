@@ -1,7 +1,8 @@
 //Zigzag
 // problem link : https://community.topcoder.com/stat?c=problem_statement&pm=1259
 //http://ideone.com/SLPNgE
-#include <iostream>
+//
+#include <bits/stdc++.h>
 using namespace std;
 int n,a[100005], up[100005],down[100005];
 int main() {
